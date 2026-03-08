@@ -41,10 +41,27 @@ for(i in 1:nrow(pIndex))
   Spec[[i]] = cbind(mz, intensity)
 }
 
+
+input_file <- "./data/user_input.csv"
+
+if (file.exists(input_file)) {
+  # 讀取使用者上傳的 CSV 檔
+  user_data <- read.csv(input_file)
+  
+  # 轉換為演算法所需的矩陣格式
+  ms_unknown <- as.matrix(user_data[, c("mz", "intensity")])
+  message("成功載入使用者輸入數據。")
+} else {
+  # 如果沒偵測到檔案，則自動載入預設範例 (原本的數據)
+  message("未偵測到 user_input.csv，載入預設範例數據。")
+  ms_unknown <- matrix(
+    c(108.889, 15.431, 113.407, 53.522, 114.285, 100.0, 
+      114.536, 47.916, 136.499, 22.35,  136.876, 17.753, 
+      154.447, 11.029, 155.451, 32.825, 155.577, 24.099), 
+    nrow = 9, ncol = 2, byrow = TRUE,
+    dimnames = list(NULL, c("mz", "intensity")))
+}
 #未知的compound
-ms_unknown <- matrix(c(108.889,113.407,114.285,114.536,136.499,136.876,154.447,155.451,155.577, 15.431,53.522,100.0,47.916,22.35,17.753,11.029,32.825,24.099), nrow = 9, ncol = 2, byrow = TRUE,
-               dimnames = list(NULL,c("mz", "intensity")))
-print(ms_unknown)
 
 #計算entropy_similarity
 
