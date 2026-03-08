@@ -1,5 +1,5 @@
 library(stringr)
-MSP_Path ="C:/Users/Public/專題研究/HMDB.txt"
+MSP_Path ="./data//HMDB.txt"
 
 tmp = readLines(MSP_Path)
 ### 哪裡出現關鍵字，例如Name
