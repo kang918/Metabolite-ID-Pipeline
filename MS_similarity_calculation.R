@@ -67,7 +67,7 @@ similarity_Score <- map(seq_along(Spec), ~ {
 
 #畫質譜比對圖
 for(i in 1:length(Spec)){
-    png(paste0("~/Spec_similarity/", i,".png"), width  = 800, height = 800, units = "px" )  
+    png(paste0("./results/plots/Match_", i,".png"), width  = 800, height = 800, units = "px" )  
     plot(ms_unknown[,1], ms_unknown[,2], type = "h",##h=histogram 
          xlab ="mz", ylab = "Intensity", ylim = c(-100, 100), lwd = 2,
          main = "Spectral Entropy Similarity")
