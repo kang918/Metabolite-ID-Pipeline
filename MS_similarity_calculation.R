@@ -8,7 +8,7 @@ library(purrr)
 library(ggplot2)
 
 #建立資料庫
-MSP_Path ="C:/Users/Public/MSMSdotproductsimilarity/HMDB.txt"
+MSP_Path ="./data/"
 
 tmp = readLines(MSP_Path)
 ### 哪裡出現關鍵字，例如Name
