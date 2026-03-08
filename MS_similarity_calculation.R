@@ -8,7 +8,7 @@ library(purrr)
 library(ggplot2)
 
 #建立資料庫
-MSP_Path ="./data/"
+MSP_Path ="./data/HMDB.txt"
 
 tmp = readLines(MSP_Path)
 ### 哪裡出現關鍵字，例如Name
