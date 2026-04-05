@@ -17,16 +17,17 @@ To address the sensitivity limitations of traditional algorithms (e.g., Cosine S
 * `results/`: Automated output for high-resolution Head-to-Tail plots.
 * `Metabolite_ID.Rproj`: R project file for environment consistency.
 
-🛠 Prerequisites
-To run this pipeline, you need **R (>= 4.0.0)** and the following libraries:
-```R
-install.packages(c("tidyverse", "msentropy"))
-
 📌 Quick Start
 1. Clone the repository and open `Metabolite_ID.Rproj`.
 2. Ensure R packages `tidyverse` and `msentropy` are installed.
 3. Run the main script `MS_similarity_calculation.R`.
 4. Check the `results/` folder for visual identification reports.
+
+🛠 Prerequisites
+To run this pipeline, you need **R (>= 4.0.0)** and the following libraries:
+```R
+install.packages(c("tidyverse", "msentropy"))
+```
 
 📊 Results (Visuals)
 The pipeline automatically generates Head-to-Tail plots, allowing for rapid visual confirmation between the query spectrum (Top) and the HMDB reference (Bottom).
