@@ -1,33 +1,38 @@
-##📌 Project Title
-Automated Metabolite Identification System for Clinical Mass Spectrometry
+# Automated Metabolite Identification System for Clinical Mass Spectrometry 🧬
 
-##📌 Summary
-To address the sensitivity limitations of traditional algorithms (e.g., Cosine Similarity) in complex clinical matrices,this pipeline automates metabolite identification by integrating Spectral Entropy measures. This approach optimizes the detection of subtle fragment characteristics, bridging the gap between raw MS data and clinical decision support. 
+## 📌 Project Summary
+To address the sensitivity limitations of traditional algorithms (e.g., Cosine Similarity) in complex clinical matrices, this pipeline automates metabolite identification by integrating **Spectral Entropy** measures. This approach optimizes the detection of subtle fragment characteristics, bridging the gap between raw MS data and clinical decision support.
 
-##📌 Implementation Details
-1. Automated ETL Pipeline: Engineered a Regex-based parser to transform semi-structured HMDB records into standardized,   analysis-ready formats for high-throughput computation.
+---
 
-2. Spectral Entropy Analytics: Implemented Entropy-based similarity measures to enhance identification precision. Unlike traditional methods, this algorithm effectively handles spectral noise and dynamic range in clinical samples, providing more robust chemical fingerprinting.
+## 🛠 Implementation Details
+* **Automated ETL Pipeline**: Engineered a **Regex-based** parser to transform semi-structured HMDB records into standardized, analysis-ready formats for high-throughput computation.
+* **Spectral Entropy Analytics**: Implemented entropy-based similarity measures to enhance identification precision. Unlike traditional methods, this algorithm effectively handles spectral noise and dynamic range in clinical samples, providing more robust chemical fingerprinting.
+* **Analytical Visualization**: Developed an automated **Head-to-Tail plotting** module to facilitate rapid visual validation and streamline the clinical reporting workflow.
 
-3. Analytical Visualization: Developed an automated Head-to-Tail plotting module to facilitate rapid visual validation and streamline the clinical reporting workflow.
+---
 
-##📌 Directory Structure
+## 📂 Directory Structure
 * `data/`: Raw MSP files from HMDB and sample user CSV files.
-* `scripts/`: R scripts for ETL processing and similarity calculation.
-* `results/`: Automated output for high-resolution Head-to-Tail plots.
-* `Metabolite_ID.Rproj`: R project file for environment consistency.
+* `results/`: Automated output directory for high-resolution Head-to-Tail plots.
+* `MS_similarity_calculation.R`: Main analytic script with built-in environment portability.
+* `Metabolite_ID.Rproj`: R project configuration for seamless environment consistency.
 
-📌 Quick Start
-1. Clone the repository and open `Metabolite_ID.Rproj`.
-2. Ensure R packages `tidyverse` and `msentropy` are installed.
-3. Run the main script `MS_similarity_calculation.R`.
-4. Check the `results/` folder for visual identification reports.
+---
 
-##🛠 Prerequisites
+## ⚙️ Quick Start
+1. **Clone** the repository and open `Metabolite_ID.Rproj`.
+2. **Ensure** R packages `tidyverse` and `msentropy` are installed.
+3. **Run** the main script `MS_similarity_calculation.R`.
+4. **Check** the `results/` folder for visual identification reports.
+
+---
+
+## 🏗 Prerequisites
 To run this pipeline, you need **R (>= 4.0.0)** and the following libraries:
+
 ```R
 install.packages(c("tidyverse", "msentropy"))
-```
 
 ##📊 Results (Visuals)
 The pipeline automatically generates Head-to-Tail plots, allowing for rapid visual confirmation between the query spectrum (Top) and the HMDB reference (Bottom).
