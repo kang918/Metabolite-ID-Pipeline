@@ -33,6 +33,7 @@ To run this pipeline, you need **R (>= 4.0.0)** and the following libraries:
 
 ```R
 install.packages(c("tidyverse", "msentropy"))
+```
 
 ##📊 Results (Visuals)
 The pipeline automatically generates Head-to-Tail plots, allowing for rapid visual confirmation between the query spectrum (Top) and the HMDB reference (Bottom).
