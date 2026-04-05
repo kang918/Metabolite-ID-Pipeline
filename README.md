@@ -1,3 +1,38 @@
+📌 Project Title
+Automated Metabolite Identification System for Clinical Mass Spectrometry
+
+📌 Summary
+To address the sensitivity limitations of traditional algorithms (e.g., Cosine Similarity) in complex clinical matrices,this pipeline automates metabolite identification by integrating Spectral Entropy measures. This approach optimizes the detection of subtle fragment characteristics, bridging the gap between raw MS data and clinical decision support. 
+
+📌 Implementation Details
+1. Automated ETL Pipeline: Engineered a Regex-based parser to transform semi-structured HMDB records into standardized,   analysis-ready formats for high-throughput computation.
+
+2. Spectral Entropy Analytics: Implemented Entropy-based similarity measures to enhance identification precision. Unlike traditional methods, this algorithm effectively handles spectral noise and dynamic range in clinical samples, providing more robust chemical fingerprinting.
+
+3. Analytical Visualization: Developed an automated Head-to-Tail plotting module to facilitate rapid visual validation and streamline the clinical reporting workflow.
+
+📌 Directory Structure
+* `data/`: Raw MSP files from HMDB and sample user CSV files.
+* `scripts/`: R scripts for ETL processing and similarity calculation.
+* `results/`: Automated output for high-resolution Head-to-Tail plots.
+* `Metabolite_ID.Rproj`: R project file for environment consistency.
+
+📌 Quick Start
+1. Clone the repository and open `Metabolite_ID.Rproj`.
+2. Ensure R packages `tidyverse` and `msentropy` are installed.
+3. Run the main script `MS_similarity_calculation.R`.
+4. Check the `results/` folder for visual identification reports.
+
+## 📄 Full Report
+For detailed scientific methodology and case studies, please refer to the [Technical Report (PDF)](./Technical_Report_Metabolite_ID_Project.pdf).
+
+
+This project develops an automated pipeline in R to identify metabolites by comparing unknown clinical mass spectrometry (MS) data against the Human Metabolome Database (HMDB).
+The system automates the transition from raw, unstructured bio-information into actionable clinical insights through two core phases:
+1. Data Engineering (ETL): Transforming legacy HMDB records into structured matrix formats for computational readiness.
+
+2. Algorithmic Identification: Utilizing Spectral Entropy Similarity to quantify the match between unknown samples and reference libraries.
+3. 
 臨床代謝質體自動化鑑定系統 (Metabolite Identification Pipeline)
 📌 專案背景與動機 (Motivation)
 在精準醫療研究中，鑑定臨床檢體中的未知代謝體（Metabolites）是核心環節。傳統分析多仰賴 Dot Product 等基礎計算法，但在處理具備複雜背景雜訊的臨床檢體（如：糞便代謝質體）時，往往辨識精準度不足。
