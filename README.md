@@ -39,6 +39,6 @@ install.packages(c("tidyverse", "msentropy"))
 The pipeline automatically generates Head-to-Tail plots, allowing for rapid visual confirmation between the query spectrum (Top) and the HMDB reference (Bottom).
 
 ## 📄 Full Report
-For detailed scientific methodology and case studies, please refer to the [Technical Report (PDF)](./Technical_Report_Metabolite_ID_Project.pdf).
+For detailed scientific methodology and case studies, please refer to the [Technical Report (PDF)](./Technical_Report_Metabolite_ID.pdf).
 
 
