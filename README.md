@@ -41,4 +41,8 @@ The pipeline automatically generates Head-to-Tail plots, allowing for rapid visu
 ## 📄 Full Report
 For detailed scientific methodology and case studies, please refer to the [Technical Report (PDF)](./Technical_Report_Metabolite_ID.pdf).
 
+## Methodology & References
+The spectral similarity scoring and data alignment in this pipeline are implemented based on the methodologies described in:
 
+  Li, Y., et al. (2021). "Increasing the confidence of metabolite identification through machine learning-based spectral  
+  library searching." Nature Methods.
