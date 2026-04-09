@@ -44,5 +44,4 @@ For detailed scientific methodology and case studies, please refer to the [Techn
 ## Methodology & References
 The spectral similarity scoring and data alignment in this pipeline are implemented based on the methodologies described in:
 
-  Li, Y., et al. (2021). "Increasing the confidence of metabolite identification through machine learning-based spectral  
-  library searching." Nature Methods.
+Li, Y., Kind, T., Folz, J. et al. Spectral entropy outperforms MS/MS dot product similarity for small-molecule compound identification. Nat Methods 18, 1524–1531 (2021). https://doi.org/10.1038/s41592-021-01331-z
